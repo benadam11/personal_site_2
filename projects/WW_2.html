@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Site Properities -->
+	<title>Windmill Winery | Ben Adam | UI/UX</title>
+	<meta name="description" content="UI &amp; UX design for Windmill Winery" />
+	<meta name="keywords" content="design, development, front, end, developer, UX, UI, copywriting, copywriter, web, HTML, CSS, Javascript" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.66.0" />
+
+	<!-- DocPad Styles + Our Own -->
+	<style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/normalize.css" /><link  rel="stylesheet" href="/vendor/h5bp.css" /><link  rel="stylesheet" href="/assets/styles/style.css" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!-- Typekit code here -->
+	<script type="text/javascript" src="//use.typekit.net/jqg0quq.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+
+	<header id="header">
+		<div class="container">
+			<div class="row clearfix">
+				<nav id="header-nav" role="navigation">
+					<a class="site-logo" href="http://localhost:9778"></a>
+					<ul id="header-nav-menu">
+						<li class="list-item"><a href="http://localhost:9778">Home</a></li>
+						<li class="list-item"><a  href="http://localhost:9778/Projects_List">Projects</a></li>
+						<li class="list-item"><a  href="http://localhost:9778/Blog">Blog</a></li>
+						<li class="list-item">
+							<a  href="#">Social</a>
+							<ul class ="sub-menu">
+								<li><a href="#"></a></li>
+								<li></li>
+								<li><a href="#"></a></li>
+								<li></li>
+								<li><a href="#"></a></li>
+								<li></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="hero" style="
+	background:url(../assets/images/ww-hero.jpg) no-repeat center bottom; 
+	background-cover:-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+	<img class="hero-logo" style="max-height:80px;" src="../assets/images/ww-logo.svg">
+</section>
+
+<div class="more-space"></div>
+
+<section class="content">
+	<div class="container">
+		<div class="row clearfix">
+			<div class="column third space">
+				<h2>Windmill Winery</h2>
+				<h3>Roles: UI / UX / Art Direction</h3>
+				<a href="http://localhost:9778/Projects_List" class="btn"><span class="arrow-right">&larr;</span>Back to projects</a>
+			</div>
+			<div class="column third">
+				<p class="column-text">Windmill Winery was one of the last clients that I worked with as a part of Blinktank. My partner Caleb lead the charge with the branding and icons, while I tackled the web experience.  His feedback and suggestions were a critical part of this project. The web assets were the final deliverable of a larger branding project.</p>
+			</div>
+			<div class="column third">
+				<p class="column-text">Windmill had old site that was clunky and difficult to navigate, so organizing the information into a logical flow was the primary challenge of this project.Because they are in the wedding industry, we used large imagery liberally throughout the site to tell the story of their brand and differentiate them from their competitors. </p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="images">
+	<div class="container-inner">
+		<p><img src="../assets/images/WW_Homescreen.jpg" alt="Homescreen">
+<img src="../assets/images/WW_Layout.jpg" alt="Layouts">
+<img src="../assets/images/WW_iPad.jpg" alt="Tablet View">
+<img src="../assets/images/WW_mac.jpg" alt="Login Screen"></p>
+
+	</div>
+</section>
+s
+
+<!--Footer Partial-->
+
+<footer id="footer"><p class="column-text">Copyright Ben Adam 2014</p></footer>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/vendor/jquery.js"><\/script>')</script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.js"></script><script defer="defer"  src="/assets/scripts/script.js"></script>
+</body>
+</html>

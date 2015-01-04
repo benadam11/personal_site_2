@@ -1,0 +1,794 @@
+/*-- scss imports --*/
+/* RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+
+select, input, textarea, button {
+  font: 99% sans-serif;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong, th {
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+::-moz-selection {
+  background: #9e89aa;
+  color: #fff;
+  text-shadow: none;
+}
+
+a:link {
+  -webkit-tap-highlight-color: #9e89aa;
+}
+
+button {
+  width: auto;
+  overflow: visible;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+body, select, input, textarea {
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+/* max-width media queries */
+/* max-width media queries */
+/* range media queries */
+/*------------------------
+Global styles
+------------------------*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #26353a;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #26353a;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.orange {
+  color: #d65c2d;
+}
+
+.small {
+  font-size: .75em;
+}
+
+#footer {
+  text-align: center;
+  border-top: 1px solid #D4D4D4;
+  border-bottom: 0.5em solid #26353a;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  margin-top: 3em;
+}
+
+/*-----------------------------
+Typography & Baseline Grid
+-------------------------------*/
+h1, h2 {
+  font-family: "ltc-bodoni-175", serif;
+}
+
+h2, h3, h4, h5, h6, p, blockquote, a, li {
+  font-family: Georgia;
+}
+
+h1 {
+  font-size: 3em;
+  /* 48 / 16 */
+  line-height: 1em;
+  /* 48 / 48 */
+  margin-bottom: .5em;
+  /* 24 / 48 */
+}
+
+h2 {
+  font-size: 2.25em;
+  /* 36 / 16 */
+  line-height: 1.333333333333333em;
+  /* 48 / 36 */
+  margin-bottom: .6666666666666667em;
+  /* 24 / 36 */
+}
+
+h3 {
+  font-size: 1.5em;
+  /* 24 / 16 */
+  line-height: 1.5em;
+  /* 24 / 24 */
+  margin-bottom: 1em;
+  /* 24 / 24 */
+}
+
+h4 {
+  font-size: 1.3125em;
+  /* 21 / 16 */
+  line-height: 1.5em;
+  /* 24 / 21 */
+  margin-bottom: 1.142857142857143em;
+  /* 24 / 21 */
+}
+
+h5 {
+  font-size: 1.125em;
+  /* 18 / 16 */
+  line-height: 1.333333333333333em;
+  /* 24 / 18 */
+  margin-bottom: 1.333333333333333em;
+  /* 24 / 18 */
+}
+
+h6 {
+  font-size: 1.125em;
+  /* 18 / 16 */
+  line-height: 1.875em;
+  /* 30 / 16 */
+  margin-bottom: 1.875em;
+  /* 24 / 16 */
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.25em;
+  /* 20 / 16 */
+  line-height: 2em;
+  /* 32 / 16 */
+  margin-bottom: 1.5em;
+  /* 24 / 16 */
+}
+
+ol li {
+  font-size: 1.25em;
+  /* 20 / 16 */
+  line-height: 2em;
+  /* 32 / 16 */
+  margin-bottom: 1.5em;
+  /* 24 / 16 */
+}
+
+.column-text {
+  font-size: 1.25em;
+  /* 18 / 16 */
+  line-height: 2em;
+  /* 30 / 16 */
+  margin-bottom: 1.5em;
+  /* 24 / 16 */
+  font-weight: 500;
+}
+
+blockquote {
+  font-size: 2em;
+  /* 21 / 16 */
+  line-height: 2.250em;
+  /* 30 / 16 */
+  text-align: center;
+  max-width: 40em;
+  margin-left: -30%;
+  margin-right: -30%;
+}
+
+@media (min-width: 20rem) and (max-width: 60rem) {
+  blockquote {
+    font-size: 2em;
+    /* 21 / 16 */
+    line-height: 2.250em;
+    /* 30 / 16 */
+    text-align: center;
+    max-width: 40em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.dropcap:first-letter {
+  float: left;
+  font-size: 72px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+/*------------------------
+Header / Nav
+-------------------------*/
+#header {
+  border-top: 0.5em solid #26353a;
+  padding-top: 4em;
+  position: relative;
+  z-index: 1000;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+  #header {
+    text-align: center;
+    border-bottom: 1px solid #D4D4D4;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+.site-logo {
+  background: url(../images/logo.svg) no-repeat;
+  height: 42px;
+  width: 42px;
+  float: left;
+}
+
+@media (min-width: 20rem) and (max-width: 40rem) {
+  .site-logo {
+    display: none;
+  }
+}
+#header-nav-menu,
+.sub-menu {
+  float: right;
+  padding-top: 1em;
+}
+
+@media (min-width: 20rem) and (max-width: 40rem) {
+  #header-nav {
+    display: inline-block;
+  }
+}
+.list-item,
+.sub-menu li {
+  float: left;
+  padding-left: 3em;
+}
+
+@media (min-width: 20rem) and (max-width: 40rem) {
+  .list-item {
+    float: left;
+    padding-left: 2em;
+  }
+}
+@media (min-width: 20rem) and (max-width: 40rem) {
+  .list-item:first-child {
+    padding-left: 0em;
+  }
+}
+.list-item a {
+  font-size: 1.25em;
+  text-decoration: none;
+  padding-bottom: .5em;
+}
+.list-item a:hover {
+  border-bottom: 1px solid #26353a;
+}
+
+/*------------------------
+Global Elements
+-------------------------*/
+.content {
+  position: relative;
+}
+
+hr {
+  width: 100px;
+  display: inline-block;
+}
+
+.btn {
+  font-family: Garamond,"garamond-premier-pro-display", Georgia, serif;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.arrow {
+  position: relative;
+  left: 0;
+  vertical-align: middle;
+  font-size: 1em;
+  -webkit-transition: left .2s linear;
+  -moz-transition: left .2s linear;
+  -o-transition: left .2s linear;
+  transition: left .2s linear;
+}
+
+a:hover .arrow, button:hover .arrow {
+  left: 10px;
+  -webkit-transition: left .2s linear;
+  -moz-transition: left .2s linear;
+  -o-transition: left .2s linear;
+  transition: left .2s linear;
+}
+
+a:hover .arrow-right, button:hover .arrow-right {
+  right: 10px;
+  -webkit-transition: right .2s linear;
+  -moz-transition: right .2s linear;
+  -o-transition: right .2s linear;
+  transition: right .2s linear;
+}
+
+.arrow-left {
+  position: relative;
+  right: 0;
+  vertical-align: middle;
+  font-size: 1em;
+  -webkit-transition: right .2s linear;
+  -moz-transition: right .2s linear;
+  -o-transition: right .2s linear;
+  transition: right .2s linear;
+}
+
+.arrow-right {
+  position: relative;
+  right: 0;
+  vertical-align: middle;
+  font-size: 1em;
+  -webkit-transition: right .2s linear;
+  -moz-transition: right .2s linear;
+  -o-transition: right .2s linear;
+  transition: right .2s linear;
+}
+
+a:hover .arrow-left,
+button:hover .arrow-left {
+  right: 10px;
+  -webkit-transition: right .2s linear;
+  -moz-transition: right .2s linear;
+  -o-transition: right .2s linear;
+  transition: right .2s linear;
+}
+
+.space {
+  padding-bottom: 1em;
+}
+
+.more-space {
+  padding-bottom: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.fade-in {
+  display: none;
+}
+
+/* -------------------
+Set Up The Grid
+--------------------*/
+/*-------------------------------
+Layout & Containers
+---------------------------------*/
+/*Grid from Adam Kaplan adamkaplan.me*/
+.container, .container-inner, .list-inner, .blog-container {
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+  max-width: 65rem;
+  position: relative;
+}
+
+.container-inner {
+  max-width: 60em;
+}
+
+.list-inner {
+  max-width: 40em;
+}
+
+.blog-container {
+  max-width: 50em;
+}
+
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column:first-child {
+    padding-left: 0em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.third {
+    width: 33.3%;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+}
+/*Clearfix by @necolas*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* -------------------
+Page Layouts
+--------------------*/
+.hero {
+  background: #F5F5F5;
+  overflow: hidden;
+  width: 100%;
+  min-height: 600px;
+  height: auto;
+  top: -8em;
+  left: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-logo {
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/*---------Home Page------------*/
+#home-page {
+  /*  background:url(../images/home-hero.jpg) no-repeat center top;
+    @include background-cover; */
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+  #home-page {
+    display: none;
+  }
+}
+#hero-copy {
+  padding-top: 16em;
+}
+
+#hero-copy h1 {
+  font-size: 7em;
+  margin-bottom: .25em;
+}
+#hero-copy h3 {
+  font-size: 3em;
+}
+
+#intro {
+  padding-bottom: 8em;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+  #intro {
+    padding-top: 4em;
+    padding-bottom: 2em;
+  }
+}
+#quote {
+  border-top: 1px solid #D4D4D4;
+  border-bottom: 1px solid #D4D4D4;
+  padding-top: 8em;
+  padding-left: 1em;
+  padding-bottom: 8em;
+  padding-right: 1em;
+  margin-bottom: 8em;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+  #quote {
+    border-top: 1px solid #D4D4D4;
+    border-bottom: 1px solid #D4D4D4;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    padding-right: 1em;
+    margin-bottom: 4em;
+  }
+}
+#lists {
+  margin-bottom: 8em;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+  #lists {
+    margin-bottom: 2em;
+  }
+}
+#lists h2 {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.line {
+  min-height: 450px;
+  border-top: 1px solid #D4D4D4;
+  border-bottom: 1px solid #D4D4D4;
+  padding-top: 4em;
+  margin-bottom: 4em;
+}
+
+#recent-projects {
+  padding-right: 3em;
+}
+
+#recent-posts {
+  padding-left: 0em;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+  #recent-posts {
+    padding-top: 6em;
+  }
+}
+.social-icon {
+  display: none;
+}
+
+.list-item.social-icon a:hover {
+  border-bottom: none;
+  color: #d65c2d;
+}
+
+/*-------------Blog--------------*/
+/*list-hero is styling for the posts
+& projects archive pages*/
+.list-hero {
+  padding-top: 3em;
+  display: inline-block;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #D4D4D4;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+  .list-hero {
+    padding-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+.blog {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.blog a {
+  color: #d65c2d;
+}
+
+.blog-post ol li {
+  font-size: 1.25 em;
+}
+
+.title-space {
+  padding-top: 6em;
+  margin-top: 3em;
+}
+
+.images {
+  padding-top: 6em;
+  padding-bottom: 3em;
+}

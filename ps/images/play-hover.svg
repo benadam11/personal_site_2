@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Play button</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Phx-Seminary---Desktop" sketch:type="MSArtboardGroup" transform="translate(-177.000000, -327.000000)">
+            <g id="Hero" sketch:type="MSLayerGroup" transform="translate(0.000000, -1029.000000)">
+                <g id="Play-button-+-WATCH-VIDEO" transform="translate(177.000000, 1356.000000)" sketch:type="MSShapeGroup">
+                    <g id="Play-button">
+                        <circle id="Oval-1" stroke="#BF1E2E" stroke-width="3" cx="22" cy="22" r="22"></circle>
+                        <path d="M18.0421226,14.4615151 L30.2159419,22 L18.0421226,29.5384849 L18.0421226,14.4615151 Z" id="Path-1" fill="#BF1E2E"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
